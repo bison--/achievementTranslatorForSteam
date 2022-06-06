@@ -29,11 +29,6 @@ namespace achievementTranslatorForSteam
             return new VProperty(key, );
         }*/
 
-        public void setLanguageAndKey(string language, string key, string value)
-        {
-            //volvo.Value[language][key].Value = value;
-        }
-
         public void loadFile(string fileName)
         {
             volvo = VdfConvert.Deserialize(File.ReadAllText(fileName));
@@ -42,9 +37,16 @@ namespace achievementTranslatorForSteam
             Console.WriteLine(volvo.ToString());
         }
 
-        public void saveFile(string fileName = "")
+        public void saveFile(string fileName)
         {
-            File.WriteAllText(@"K:\gamedev\unity3d\NachkriegsrattenPunkRockPuzzle\other\achievement_translations\dummy.vdf", VdfConvert.Serialize(json.ToVdf()));
+            string vdfString = VdfConvert.Serialize(json.ToVdf()).Trim();
+            // for whatever reason, the serialised version has { } at start and end and this has to go
+            char[] charsToTrim = { '{', '}' };
+            vdfString = vdfString.Trim(charsToTrim);
+
+            File.WriteAllText(fileName, vdfString);
         }
+
+
     }
 }

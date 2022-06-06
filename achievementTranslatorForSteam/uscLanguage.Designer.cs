@@ -46,6 +46,7 @@
             this.cmbLanguage.Size = new System.Drawing.Size(196, 21);
             this.cmbLanguage.TabIndex = 0;
             this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
+            this.cmbLanguage.SelectionChangeCommitted += new System.EventHandler(this.cmbLanguage_SelectionChangeCommitted);
             // 
             // label1
             // 
@@ -73,6 +74,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(117, 20);
             this.txtName.TabIndex = 3;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtDescription
             // 
@@ -82,6 +84,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(117, 20);
             this.txtDescription.TabIndex = 4;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // uscLanguage
             // 

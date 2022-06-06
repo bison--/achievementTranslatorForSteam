@@ -32,13 +32,21 @@
             this.btnDescriptionToRight = new System.Windows.Forms.Button();
             this.btnDescriptionToLeft = new System.Windows.Forms.Button();
             this.btnNameToLeft = new System.Windows.Forms.Button();
-            this.uscLangRight = new achievementTranslatorForSteam.uscLanguage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblKey = new System.Windows.Forms.Label();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.uscLangLeft = new achievementTranslatorForSteam.uscLanguage();
+            this.uscLangRight = new achievementTranslatorForSteam.uscLanguage();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnNameToRight
             // 
-            this.btnNameToRight.Location = new System.Drawing.Point(211, 30);
+            this.btnNameToRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNameToRight.Location = new System.Drawing.Point(215, 29);
             this.btnNameToRight.Name = "btnNameToRight";
             this.btnNameToRight.Size = new System.Drawing.Size(30, 23);
             this.btnNameToRight.TabIndex = 2;
@@ -48,7 +56,8 @@
             // 
             // btnDescriptionToRight
             // 
-            this.btnDescriptionToRight.Location = new System.Drawing.Point(211, 59);
+            this.btnDescriptionToRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDescriptionToRight.Location = new System.Drawing.Point(215, 58);
             this.btnDescriptionToRight.Name = "btnDescriptionToRight";
             this.btnDescriptionToRight.Size = new System.Drawing.Size(30, 23);
             this.btnDescriptionToRight.TabIndex = 3;
@@ -58,8 +67,7 @@
             // 
             // btnDescriptionToLeft
             // 
-            this.btnDescriptionToLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDescriptionToLeft.Location = new System.Drawing.Point(261, 59);
+            this.btnDescriptionToLeft.Location = new System.Drawing.Point(3, 58);
             this.btnDescriptionToLeft.Name = "btnDescriptionToLeft";
             this.btnDescriptionToLeft.Size = new System.Drawing.Size(30, 23);
             this.btnDescriptionToLeft.TabIndex = 5;
@@ -69,8 +77,7 @@
             // 
             // btnNameToLeft
             // 
-            this.btnNameToLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNameToLeft.Location = new System.Drawing.Point(261, 30);
+            this.btnNameToLeft.Location = new System.Drawing.Point(3, 29);
             this.btnNameToLeft.Name = "btnNameToLeft";
             this.btnNameToLeft.Size = new System.Drawing.Size(30, 23);
             this.btnNameToLeft.TabIndex = 4;
@@ -78,35 +85,85 @@
             this.btnNameToLeft.UseVisualStyleBackColor = true;
             this.btnNameToLeft.Click += new System.EventHandler(this.btnNameToLeft_Click);
             // 
-            // uscLangRight
+            // label1
             // 
-            this.uscLangRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.uscLangRight.Location = new System.Drawing.Point(297, 3);
-            this.uscLangRight.Name = "uscLangRight";
-            this.uscLangRight.Size = new System.Drawing.Size(202, 84);
-            this.uscLangRight.TabIndex = 1;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Key:";
+            // 
+            // lblKey
+            // 
+            this.lblKey.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblKey.AutoSize = true;
+            this.lblKey.Location = new System.Drawing.Point(37, 103);
+            this.lblKey.Name = "lblKey";
+            this.lblKey.Size = new System.Drawing.Size(10, 13);
+            this.lblKey.TabIndex = 7;
+            this.lblKey.Text = "-";
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.uscLangLeft);
+            this.splitContainer1.Panel1.Controls.Add(this.btnNameToRight);
+            this.splitContainer1.Panel1.Controls.Add(this.btnDescriptionToRight);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnNameToLeft);
+            this.splitContainer1.Panel2.Controls.Add(this.btnDescriptionToLeft);
+            this.splitContainer1.Panel2.Controls.Add(this.uscLangRight);
+            this.splitContainer1.Size = new System.Drawing.Size(506, 90);
+            this.splitContainer1.SplitterDistance = 250;
+            this.splitContainer1.TabIndex = 8;
             // 
             // uscLangLeft
             // 
+            this.uscLangLeft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.uscLangLeft.Location = new System.Drawing.Point(3, 3);
             this.uscLangLeft.Name = "uscLangLeft";
-            this.uscLangLeft.Size = new System.Drawing.Size(202, 84);
+            this.uscLangLeft.Size = new System.Drawing.Size(201, 84);
             this.uscLangLeft.TabIndex = 0;
+            // 
+            // uscLangRight
+            // 
+            this.uscLangRight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uscLangRight.Location = new System.Drawing.Point(46, 3);
+            this.uscLangRight.Name = "uscLangRight";
+            this.uscLangRight.Size = new System.Drawing.Size(201, 84);
+            this.uscLangRight.TabIndex = 1;
             // 
             // uscTranslation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnDescriptionToLeft);
-            this.Controls.Add(this.btnNameToLeft);
-            this.Controls.Add(this.btnDescriptionToRight);
-            this.Controls.Add(this.btnNameToRight);
-            this.Controls.Add(this.uscLangRight);
-            this.Controls.Add(this.uscLangLeft);
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.lblKey);
+            this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(517, 133);
             this.Name = "uscTranslation";
-            this.Size = new System.Drawing.Size(502, 118);
+            this.Size = new System.Drawing.Size(515, 131);
             this.Load += new System.EventHandler(this.uscTranslation_Load);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -118,5 +175,8 @@
         private System.Windows.Forms.Button btnDescriptionToRight;
         private System.Windows.Forms.Button btnDescriptionToLeft;
         private System.Windows.Forms.Button btnNameToLeft;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblKey;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

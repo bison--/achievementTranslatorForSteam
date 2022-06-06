@@ -6,12 +6,16 @@ Made for our https://spielmannspiel.com/ games.
 ## How-To
 
 * Create achievements in the Steam backend.  
-* Go to: Stats & Achievements -> Achievement Localization
-* Select additional languages and "SAVE"
-* Select "All languages" and "Download Localisation Data"
-* Select the file in the UI
+* Go to: Stats & Achievements -> Achievement Localization (Steam backend)
+* Select additional languages and "SAVE" (Steam backend)
+* Select "All languages" and "Download Localisation Data" (Steam backend)
+* Select the file in the achievementTranslatorForSteam UI
 * Make your changes
 * Export the file
-* Upload it in the Steam backend
+* Upload it in the Steam backend (Steam backend)
 * ...
-* Profit
+* Profit (Steam)
+
+## Addition
+
+Thanks to [@plantprogrammer](https://twitter.com/PlantProgrammer) for the support <3
